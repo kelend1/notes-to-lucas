@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for You</title>
+</head>
+<body>
+  <h1>A Little Message for You</h1>
+  <p>Press play to hear a surprise message.</p>
+  <audio id="player" controls autoplay></audio>
+
+  <script>
+    const messages = [
+      'https://drive.google.com/drive/u/0/mobile/folders/1r0araIXxkFntQendOOyKT-WT5aj-r1r1?sort=13&direction=a',
+      'https://drive.google.com/drive/u/0/mobile/folders/1r0araIXxkFntQendOOyKT-WT5aj-r1r1?sort=13&direction=a',
+      'voices/message3.mp3'
+      // Add more as needed
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    const player = document.getElementById('player');
+    player.src = messages[randomIndex];
+  </script>
+</body>
+</html>
