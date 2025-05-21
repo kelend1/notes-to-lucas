@@ -3,6 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Message for You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #5D5C61;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      color: #6D6875;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 300px;
+      outline: none;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>A Little Message for You</h1>
@@ -11,10 +64,7 @@
 
   <script>
     const messages = [
-      'https://kelend1.github.io/notes-to-pookie/14.m4a'//,
-      //'https://kelend1.github.io/notes-to-pookie/19.m4a',
-      //'https://kelend1.github.io/notes-to-pookie/18.m4a'
-      // Add more as needed
+      'https://kelend1.github.io/notes-to-pookie/14.m4a'
     ];
     const randomIndex = Math.floor(Math.random() * messages.length);
     const player = document.getElementById('player');
