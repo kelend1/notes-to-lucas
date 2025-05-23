@@ -59,12 +59,28 @@
 </head>
 <body>
   <h1>A Little Message for You</h1>
-  <p>Press play to hear a surprise message.</p>
+  <p>Press play to hear a surprise message. Refresh this page for a new random message.</p>
   <audio id="player" controls autoplay></audio>
 
   <script>
     const messages = [
-      'https://kelend1.github.io/notes-to-pookie/14.m4a'
+      'https://kelend1.github.io/notes-to-pookie/1.m4a',
+      'https://kelend1.github.io/notes-to-pookie/2.m4a',
+      'https://kelend1.github.io/notes-to-pookie/3.m4a',
+      'https://kelend1.github.io/notes-to-pookie/4.m4a',
+      'https://kelend1.github.io/notes-to-pookie/6.m4a',
+      'https://kelend1.github.io/notes-to-pookie/7.m4a',
+      'https://kelend1.github.io/notes-to-pookie/8.m4a',
+      'https://kelend1.github.io/notes-to-pookie/9.m4a',
+      'https://kelend1.github.io/notes-to-pookie/10.m4a',
+      'https://kelend1.github.io/notes-to-pookie/11.m4a',
+      'https://kelend1.github.io/notes-to-pookie/12.m4a',
+      'https://kelend1.github.io/notes-to-pookie/13.m4a',
+      'https://kelend1.github.io/notes-to-pookie/14.m4a',
+      'https://kelend1.github.io/notes-to-pookie/16.m4a',
+      'https://kelend1.github.io/notes-to-pookie/17.m4a',
+      'https://kelend1.github.io/notes-to-pookie/18.m4a',
+      'https://kelend1.github.io/notes-to-pookie/19.m4a'
     ];
     const randomIndex = Math.floor(Math.random() * messages.length);
     const player = document.getElementById('player');
